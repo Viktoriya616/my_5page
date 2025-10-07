@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purchase - Viktoriya</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">Viktoriya</div>
+    <ul class="nav-links">
+      <li><a href="../part 1/index.html">home</a></li>
+      <li><a href="../part 2/index.html" class="active">shop</a></li>
+      <li><a href="#">basket</a></li>
+      <li><a href="#">board</a></li>
+      <li><a href="#">information</a></li>
+    </ul>
+  </header>
+
+  <main class="purchase-page">
+    <div class="purchase-wrapper">
+
+      <div class="purchase-container">
+        <h1>Making a purchase</h1>
+
+        <div class="form-grid">
+
+          <div class="form-row">
+            <div class="form-left">
+              <label for="address">Address:</label>
+              <input type="text" id="address">
+            </div>
+
+            <div class="form-right">
+              <label>How to pay for an order?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="payment" checked> at once</label>
+                <label><input type="radio" name="payment"> upon receipt</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-left">
+              <label for="method">Payment methods:</label>
+              <select id="method">
+                <option>Visa</option>
+                <option>MasterCard</option>
+                <option>Kaspi</option>
+                <option>Apple Pay</option>
+              </select>
+            </div>
+
+            <div class="form-right">
+              <label class="total">Total amount: <span>$120</span></label>
+              <a href="#" class="order-btn">Order</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="side-bar"></div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Victoria. All rights reserved.
+  </footer>
+
+</body>
+</html>

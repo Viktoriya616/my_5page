@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: 'Abel', sans-serif;
+  background-color: #E0E0E6;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  background: linear-gradient(90deg, #6C7173, #3E3F40);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px;
+  font-family: 'Abhaya Libre', serif;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-right: 25px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 0.95rem;
+  text-transform: lowercase;
+  padding: 5px 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: linear-gradient(90deg, #A4A6A6, #6C7173);
+  border-radius: 7px;
+}
+
+.product-page {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 85%;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.image-box {
+  background-color: #FDFDFD;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 33px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 430px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+
+.image-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.image-info .product-name {
+  font-family: 'Abhaya Libre', serif;
+}
+
+.image-info .price {
+  color: #3E3F40;
+}
+
+.details-box {
+  background-color: #FDFDFD;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  flex: 1 1 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 33px;
+}
+
+.details-content {
+  flex-grow: 1;
+}
+
+.details-box h1 {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.details-box .description {
+  line-height: 1.8;
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.more-btn {
+  display: inline-block;
+  background-color: #3366cc;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  width: fit-content;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.more-btn:hover {
+  background-color: #274b9f;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-btn {
+  background-color: #FDFDFD;
+  color: #3E3F40;
+  border: 2px solid #3E3F40;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #3E3F40;
+  color: #fff;
+}
+
+.buy-btn {
+  background: linear-gradient(90deg, #6C7173, #3E3F40);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.buy-btn:hover {
+  background: #7c8183;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  background-color: #3F4041;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+@media (max-width: 992px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+    gap: 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .image-box,
+  .details-box {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .details-box {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .add-btn,
+  .buy-btn {
+    width: 45%;
+    text-align: center;
+  }
+}
