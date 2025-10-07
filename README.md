@@ -1,0 +1,1 @@
+Selected theme: online clothing store. Implemented features: 5 website pages, all 5 pages adapted for tablets and phones, tables, forms, buttons, navigation, visual effects (button and card animations, photo zoom), visual details (containers, decorative shapes).
